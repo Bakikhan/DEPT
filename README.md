@@ -1,4 +1,4 @@
-# DEPT
+# Customer Churn Prediction and AI-Powered Retention Email System
 
 **DEPT Case Assignment - Data Scientist/AI Engineer Role**  
 *Vodafone Telecommunications Customer Retention Solution*
@@ -64,29 +64,36 @@ The system implements sophisticated customer segmentation driving personalized c
 
 ## Technical Stack and Dependencies
 
-The solution utilizes a carefully selected technology stack optimized for both machine learning performance and AI content generation. The implementation requires Python 3.8 or higher with specific version dependencies ensuring compatibility across the AI model pipeline.
+The solution utilizes a carefully selected technology stack optimized for both machine learning performance and AI content generation. The implementation requires Python 3.10.18 with specific version dependencies ensuring compatibility across the AI model pipeline.
 
 ### Core Dependencies
 ```python
+# Python Version
+Python==3.10.18
+
 # Data Science & ML
-pandas>=1.3.0
-numpy>=1.21.0
-scikit-learn>=1.0.0
-matplotlib>=3.4.0
-seaborn>=0.11.0
+pandas==2.3.1
+numpy==1.26.4
+scikit-learn==1.7.1
+matplotlib==3.10.5
+seaborn==0.13.2
 
 # AI & LLM
-transformers>=4.20.0
-torch>=1.12.0
-huggingface-hub>=0.8.0
+transformers==4.56.0
+torch==2.6.0+cu124
+huggingface-hub==0.34.4
 
-# Utilities
+# Jupyter Environment
+jupyter==1.1.1
+ipython==8.37.0
+
+# Utilities (Built-in Python modules)
 warnings
 datetime
 json
 ```
 
-Core data science dependencies include pandas for data manipulation, numpy for numerical computing, scikit-learn for machine learning algorithms, matplotlib and seaborn for data visualization. The AI components leverage transformers library for LLM integration, PyTorch for deep learning frameworks, and huggingface-hub for model management.
+Core data science dependencies include pandas for data manipulation, numpy for numerical computing, scikit-learn for machine learning algorithms, matplotlib and seaborn for data visualization. The AI components leverage transformers library for LLM integration, PyTorch for deep learning frameworks with CUDA 12.4 support, and huggingface-hub for model management.
 
 ## Project Structure and Code Organization
 
@@ -94,7 +101,7 @@ The codebase follows enterprise-grade organization principles with clear separat
 
 ### Project Structure
 ```
-├── DEPT.py                     # Main analysis notebook/script
+├── DEPT.ipynb                  # Main analysis Jupyter notebook
 ├── email_generator.py          # Email generation orchestrator
 ├── model_loader.py            # LLM model management
 ├── prompt_templates.py        # Prompt engineering templates
@@ -105,7 +112,7 @@ The codebase follows enterprise-grade organization principles with clear separat
 └── README.md
 ```
 
-The main analysis script (DEPT.py) orchestrates the complete workflow from data loading through results presentation. Specialized modules handle email generation orchestration (email_generator.py), LLM model management (model_loader.py), prompt template engineering (prompt_templates.py), brand compliance validation (compliance_checker.py), and system configuration (config.py).
+The main analysis notebook (DEPT.ipynb) orchestrates the complete workflow from data loading through results presentation. Specialized modules handle email generation orchestration (email_generator.py), LLM model management (model_loader.py), prompt template engineering (prompt_templates.py), brand compliance validation (compliance_checker.py), and system configuration (config.py).
 
 ## Quick Start Guide
 
