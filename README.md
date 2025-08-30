@@ -6,7 +6,6 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Machine Learning](https://img.shields.io/badge/ML-Scikit--Learn-orange.svg)](https://scikit-learn.org)
 [![AI](https://img.shields.io/badge/AI-Llama%203.1-green.svg)](https://huggingface.co)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
 
 ## Project Overview
 
