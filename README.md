@@ -121,8 +121,7 @@ The system can be deployed and executed through a straightforward setup process 
 
 **1. Clone Repository**
 ```bash
-git clone https://github.com/yourusername/dept-churn-prediction
-cd dept-churn-prediction
+git clone https://github.com/Bakikhan/DEPT
 ```
 
 **2. Install Dependencies**
@@ -133,18 +132,6 @@ pip install -r requirements.txt
 **3. Run Complete Analysis**
 ```bash
 jupyter notebook DEPT.ipynb
-```
-
-**4. Generate Emails Only**
-```python
-from email_generator import run_complete_email_generation_workflow
-
-# Use your customer data
-results, compliance = run_complete_email_generation_workflow(
-    customer_profiles=your_customers,
-    save_results=True,
-    show_results=True
-)
 ```
 
 Installation involves standard Python package management through pip, with additional considerations for GPU acceleration when available. The modular architecture allows selective deployment of components based on specific business requirements.
