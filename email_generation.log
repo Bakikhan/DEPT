@@ -1,0 +1,34 @@
+2025-08-30 22:00:09,066 - email_generator - INFO - EmailGenerationOrchestrator initialized
+2025-08-30 22:00:09,066 - email_generator - INFO - Initializing Email Generation System...
+2025-08-30 22:00:09,213 - model_loader - INFO - ModelManager initialized. Device: cuda
+2025-08-30 22:00:09,213 - model_loader - INFO - ModelFallback initialized
+2025-08-30 22:00:09,213 - model_loader - INFO - EmailGenerationEngine initialized
+2025-08-30 22:00:09,213 - model_loader - INFO - Initializing Email Generation Engine...
+2025-08-30 22:00:09,332 - model_loader - INFO - Successfully authenticated with Hugging Face
+2025-08-30 22:00:09,332 - model_loader - INFO - Loading model from local cache...
+2025-08-30 22:00:10,095 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-08-30 22:00:13,569 - accelerate.big_modeling - WARNING - Some parameters are on the meta device because they were offloaded to the cpu.
+2025-08-30 22:00:13,569 - model_loader - INFO - Model loaded from cache successfully
+2025-08-30 22:00:13,571 - model_loader - INFO - Text generation pipeline created successfully
+2025-08-30 22:00:13,571 - model_loader - INFO - Model loaded and pipeline created successfully
+2025-08-30 22:00:13,571 - model_loader - INFO - Engine initialized with local model
+2025-08-30 22:00:30,037 - model_loader - INFO - Basic generation test passed
+2025-08-30 22:00:52,874 - model_loader - INFO - Email prompt test passed
+2025-08-30 22:00:52,874 - email_generator - INFO - Email Generation System initialized successfully
+2025-08-30 22:00:52,874 - email_generator - INFO - Test Results: {'basic_generation': True, 'email_prompt': True, 'engine_status': True}
+2025-08-30 22:00:52,874 - email_generator - INFO - Generating emails for 2 customers...
+2025-08-30 22:00:52,874 - email_generator - INFO - Processing customer 1/2: Valued Customer
+2025-08-30 22:04:01,897 - email_generator - INFO - Email generated for Valued Customer - Method: Llama-3.1-8B-Local
+2025-08-30 22:04:01,897 - email_generator - INFO - Processing customer 2/2: Valued Customer
+2025-08-30 22:06:43,740 - email_generator - INFO - Email generated for Valued Customer - Method: Llama-3.1-8B-Local
+2025-08-30 22:06:43,741 - email_generator - INFO - Email generation complete. Generated 2 emails.
+2025-08-30 22:06:43,741 - email_generator - INFO - Analyzing compliance for 2 emails...
+2025-08-30 22:06:43,741 - email_generator - INFO - Compliance Analysis Complete:
+2025-08-30 22:06:43,742 - email_generator - INFO -   - Total emails: 2
+2025-08-30 22:06:43,742 - email_generator - INFO -   - Compliant: 1
+2025-08-30 22:06:43,742 - email_generator - INFO -   - Compliance rate: 50.0%
+2025-08-30 22:06:43,742 - email_generator - INFO -   - Average score: 0.762
+2025-08-30 22:06:43,916 - email_generator - INFO - Results saved to: email_generation_results_2025-08-30_22-06-43.json
+2025-08-30 22:06:43,952 - model_loader - INFO - Model resources cleaned up
+2025-08-30 22:06:43,953 - model_loader - INFO - EmailGenerationEngine cleaned up
+2025-08-30 22:06:43,953 - email_generator - INFO - EmailGenerationOrchestrator cleaned up

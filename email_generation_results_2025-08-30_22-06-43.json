@@ -1,0 +1,432 @@
+{
+  "generation_results": [
+    {
+      "customer_name": "Valued Customer",
+      "customer_id": "9305-CDSKC",
+      "risk_level": "High",
+      "churn_probability": 0.8256015109057215,
+      "generated_email": "Subject: 25% Off Next Plan Upgrade!\nDear Valued Customer,\nI hope this email finds you well! As a loyal Vodafone subscriber, we appreciate your continued business and want to show our gratitude by offering you an exclusive deal. This month only, take advantage of a special 25% off any upcoming plan upgrade when you renew or sign up for a longer term contract.\nWith fiber optics providing lightning-fast speeds, Vodafone remains the leading provider in internet service quality. Our robust network ensures uninterrupted streaming, gaming, and downloading so you can stay connected wherever life takes you.\nAdditionally, as a thank you for choosing Vodafone, we're extending free international calling for 3 months. Stay in touch with family and friends across borders without worrying about additional costs.\nIf ever you need technical assistance, our priority support team will be there to help troubleshoot issues quickly and efficiently. Plus, receive early access to new Vodafone products and services before they hit the market!\nDon't miss out on these great savings! Take action today and enjoy the perks of being a valued Vodafone member. We look forward to serving you for many years to come.\nThank you for choosing Vodafone,\nThe Vodafone Customer Care Team",
+      "model_used": "Llama-3.1-8B-Local",
+      "timestamp": "2025-08-30T22:04:01.897448",
+      "campaign_type": "retention",
+      "generation_successful": true
+    },
+    {
+      "customer_name": "Valued Customer",
+      "customer_id": "8779-QRDMV",
+      "risk_level": "High",
+      "churn_probability": 0.9130072866253155,
+      "generated_email": "Subject: 30% off your bill + more!\nDear [Customer Name],\nWe appreciate your continued business with us here at Vodafone! As one of our valued customers, we want to show you just how much we value your patronage. That\u2019s why we\u2019re excited to offer you an exclusive deal: Get 30% off your monthly bill for the next six months!* Plus, enjoy free access to popular streaming platforms like Netflix and Amazon Prime for the duration of your subscription. And if you need help with anything related to your account or service, our dedicated support team will be available around the clock via phone or chat. Simply dial 0800 000 1234 during business hours or reach out through our online portal anytime. Don't miss this amazing opportunity\u2014take advantage today by signing up before September 10th! Thanks again for being part of the Vodafone family. Yours sincerely, The Vodafone Customer Care Team *Discount applies only to standard home broadband packages; excludes additional features such as landline calls and TV bundles.",
+      "model_used": "Llama-3.1-8B-Local",
+      "timestamp": "2025-08-30T22:06:43.740948",
+      "campaign_type": "retention",
+      "generation_successful": true
+    }
+  ],
+  "metadata": {
+    "total_emails": 2,
+    "generation_timestamp": "2025-08-30T22:06:43.742453",
+    "engine_status": {
+      "is_initialized": true,
+      "model_info": {
+        "model_name": "meta-llama/Llama-3.1-8B",
+        "model_loaded": true,
+        "device": "cuda",
+        "cache_path": "./model_cache/llama-3.1-8b",
+        "cache_exists": true,
+        "tokenizer_vocab_size": 128256,
+        "generation_config": {
+          "max_new_tokens": 250,
+          "temperature": 0.7,
+          "do_sample": true,
+          "top_p": 0.9,
+          "repetition_penalty": 1.1,
+          "return_full_text": false,
+          "clean_up_tokenization_spaces": true
+        }
+      },
+      "fallback_active": false,
+      "api_available": false
+    }
+  },
+  "compliance_results": {
+    "summary": {
+      "total_emails": 2,
+      "compliant_emails": 1,
+      "compliance_rate": 0.5,
+      "average_score": 0.7622377622377623,
+      "timestamp": "2025-08-30T22:06:43.741955"
+    },
+    "detailed_results": [
+      {
+        "customer_id": "9305-CDSKC",
+        "customer_name": "Valued Customer",
+        "compliance_result": {
+          "overall_score": 0.8391608391608392,
+          "compliance_level": "GOOD",
+          "is_compliant": true,
+          "detailed_checks": {
+            "mandatory_elements": {
+              "has_subject_line": {
+                "passed": true,
+                "weight": 1.0,
+                "pattern_checked": "Subject:",
+                "description": "Email contains required element: Subject:"
+              },
+              "personal_greeting": {
+                "passed": true,
+                "weight": 1.0,
+                "patterns_checked": [
+                  "Hi ",
+                  "Dear "
+                ],
+                "description": "Email contains required patterns for personal greeting"
+              },
+              "uses_customer_name": {
+                "passed": true,
+                "weight": 1.0,
+                "description": "Email uses customer name 'Valued Customer'"
+              },
+              "mentions_tenure": {
+                "passed": true,
+                "weight": 0.8,
+                "patterns_checked": [
+                  "months",
+                  "tenure",
+                  "time with"
+                ],
+                "description": "Email contains required patterns for mentions tenure"
+              },
+              "has_bullet_points": {
+                "passed": false,
+                "weight": 0.8,
+                "patterns_checked": [
+                  "\u2022",
+                  "- ",
+                  "* "
+                ],
+                "description": "Email contains required patterns for has bullet points"
+              },
+              "compelling_offers": {
+                "passed": true,
+                "weight": 1.0,
+                "patterns_checked": [
+                  "discount",
+                  "free",
+                  "exclusive",
+                  "bonus"
+                ],
+                "description": "Email contains required patterns for compelling offers"
+              },
+              "clear_cta": {
+                "passed": false,
+                "weight": 1.0,
+                "patterns_checked": [
+                  "Call",
+                  "Click",
+                  "Visit",
+                  "Contact"
+                ],
+                "description": "Email contains required patterns for clear cta"
+              },
+              "professional_closing": {
+                "passed": true,
+                "weight": 1.0,
+                "patterns_checked": [
+                  "Best regards",
+                  "Thank you",
+                  "Sincerely"
+                ],
+                "description": "Email contains required patterns for professional closing"
+              },
+              "vodafone_signature": {
+                "passed": true,
+                "weight": 1.0,
+                "pattern_checked": "Vodafone",
+                "description": "Email contains required element: Vodafone"
+              }
+            },
+            "quality_checks": {
+              "appropriate_length": {
+                "passed": true,
+                "weight": 0.8,
+                "actual_count": 202,
+                "expected_range": "100-300 words",
+                "description": "Email has appropriate word count"
+              },
+              "professional_tone": {
+                "passed": false,
+                "weight": 1.0,
+                "forbidden_words_found": [
+                  "hey",
+                  "sup"
+                ],
+                "description": "Email maintains professional tone"
+              },
+              "sentence_structure": {
+                "passed": true,
+                "weight": 0.6,
+                "long_sentences_count": 0,
+                "max_allowed_length": 25,
+                "description": "Email has good sentence structure"
+              }
+            },
+            "structure_validation": {
+              "has_subject": {
+                "passed": true,
+                "description": "Email has proper subject line"
+              },
+              "has_greeting": {
+                "passed": true,
+                "description": "Email has personal greeting"
+              },
+              "has_call_to_action": {
+                "passed": true,
+                "description": "Email has clear call-to-action"
+              },
+              "has_closing": {
+                "passed": true,
+                "description": "Email has professional closing"
+              },
+              "has_signature": {
+                "passed": true,
+                "description": "Email has professional signature"
+              }
+            },
+            "tone_compliance": {
+              "friendly_approachable": {
+                "passed": true,
+                "score": 3,
+                "description": "Email uses friendly and approachable language"
+              },
+              "clear_concise": {
+                "passed": true,
+                "average_sentence_length": 14.428571428571429,
+                "description": "Email uses clear and concise language"
+              },
+              "positive_reassuring": {
+                "passed": true,
+                "score": 2,
+                "description": "Email uses positive and reassuring language"
+              },
+              "professional_trustworthy": {
+                "passed": true,
+                "score": 3,
+                "description": "Email maintains professional and trustworthy tone"
+              }
+            }
+          },
+          "recommendations": [
+            "Add has bullet points: Email contains required patterns for has bullet points",
+            "Add clear cta: Email contains required patterns for clear cta",
+            "Remove unprofessional words: ['hey', 'sup']"
+          ],
+          "timestamp": "2025-08-30T22:06:43.741520",
+          "word_count": 202,
+          "character_count": 1265
+        },
+        "model_used": "Llama-3.1-8B-Local"
+      },
+      {
+        "customer_id": "8779-QRDMV",
+        "customer_name": "Valued Customer",
+        "compliance_result": {
+          "overall_score": 0.6853146853146853,
+          "compliance_level": "NEEDS_IMPROVEMENT",
+          "is_compliant": false,
+          "detailed_checks": {
+            "mandatory_elements": {
+              "has_subject_line": {
+                "passed": true,
+                "weight": 1.0,
+                "pattern_checked": "Subject:",
+                "description": "Email contains required element: Subject:"
+              },
+              "personal_greeting": {
+                "passed": true,
+                "weight": 1.0,
+                "patterns_checked": [
+                  "Hi ",
+                  "Dear "
+                ],
+                "description": "Email contains required patterns for personal greeting"
+              },
+              "uses_customer_name": {
+                "passed": false,
+                "weight": 1.0,
+                "description": "Email uses customer name 'Valued Customer'"
+              },
+              "mentions_tenure": {
+                "passed": true,
+                "weight": 0.8,
+                "patterns_checked": [
+                  "months",
+                  "tenure",
+                  "time with"
+                ],
+                "description": "Email contains required patterns for mentions tenure"
+              },
+              "has_bullet_points": {
+                "passed": true,
+                "weight": 0.8,
+                "patterns_checked": [
+                  "\u2022",
+                  "- ",
+                  "* "
+                ],
+                "description": "Email contains required patterns for has bullet points"
+              },
+              "compelling_offers": {
+                "passed": true,
+                "weight": 1.0,
+                "patterns_checked": [
+                  "discount",
+                  "free",
+                  "exclusive",
+                  "bonus"
+                ],
+                "description": "Email contains required patterns for compelling offers"
+              },
+              "clear_cta": {
+                "passed": false,
+                "weight": 1.0,
+                "patterns_checked": [
+                  "Call",
+                  "Click",
+                  "Visit",
+                  "Contact"
+                ],
+                "description": "Email contains required patterns for clear cta"
+              },
+              "professional_closing": {
+                "passed": false,
+                "weight": 1.0,
+                "patterns_checked": [
+                  "Best regards",
+                  "Thank you",
+                  "Sincerely"
+                ],
+                "description": "Email contains required patterns for professional closing"
+              },
+              "vodafone_signature": {
+                "passed": true,
+                "weight": 1.0,
+                "pattern_checked": "Vodafone",
+                "description": "Email contains required element: Vodafone"
+              }
+            },
+            "quality_checks": {
+              "appropriate_length": {
+                "passed": true,
+                "weight": 0.8,
+                "actual_count": 168,
+                "expected_range": "100-300 words",
+                "description": "Email has appropriate word count"
+              },
+              "professional_tone": {
+                "passed": false,
+                "weight": 1.0,
+                "forbidden_words_found": [
+                  "sup"
+                ],
+                "description": "Email maintains professional tone"
+              },
+              "sentence_structure": {
+                "passed": true,
+                "weight": 0.6,
+                "long_sentences_count": 1,
+                "max_allowed_length": 25,
+                "description": "Email has good sentence structure"
+              }
+            },
+            "structure_validation": {
+              "has_subject": {
+                "passed": true,
+                "description": "Email has proper subject line"
+              },
+              "has_greeting": {
+                "passed": true,
+                "description": "Email has personal greeting"
+              },
+              "has_call_to_action": {
+                "passed": true,
+                "description": "Email has clear call-to-action"
+              },
+              "has_closing": {
+                "passed": false,
+                "description": "Email has professional closing"
+              },
+              "has_signature": {
+                "passed": true,
+                "description": "Email has professional signature"
+              }
+            },
+            "tone_compliance": {
+              "friendly_approachable": {
+                "passed": true,
+                "score": 2,
+                "description": "Email uses friendly and approachable language"
+              },
+              "clear_concise": {
+                "passed": true,
+                "average_sentence_length": 16.9,
+                "description": "Email uses clear and concise language"
+              },
+              "positive_reassuring": {
+                "passed": false,
+                "score": 1,
+                "description": "Email uses positive and reassuring language"
+              },
+              "professional_trustworthy": {
+                "passed": true,
+                "score": 2,
+                "description": "Email maintains professional and trustworthy tone"
+              }
+            }
+          },
+          "recommendations": [
+            "Add uses customer name: Email uses customer name 'Valued Customer'",
+            "Add clear cta: Email contains required patterns for clear cta",
+            "Add professional closing: Email contains required patterns for professional closing",
+            "Remove unprofessional words: ['sup']",
+            "Add has closing: Email has professional closing",
+            "Improve positive reassuring: Email uses positive and reassuring language"
+          ],
+          "timestamp": "2025-08-30T22:06:43.741934",
+          "word_count": 168,
+          "character_count": 1019
+        },
+        "model_used": "Llama-3.1-8B-Local"
+      }
+    ],
+    "recommendations": {
+      "most_common_issues": [
+        [
+          "clear_cta",
+          2
+        ],
+        [
+          "professional_tone",
+          2
+        ],
+        [
+          "has_bullet_points",
+          1
+        ],
+        [
+          "uses_customer_name",
+          1
+        ],
+        [
+          "professional_closing",
+          1
+        ]
+      ],
+      "improvement_priorities": [
+        "Address clear cta: Failed in 2 emails",
+        "Address professional tone: Failed in 2 emails",
+        "Address has bullet points: Failed in 1 emails"
+      ]
+    }
+  }
+}
