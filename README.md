@@ -79,7 +79,7 @@ seaborn==0.13.2
 
 # AI & LLM
 transformers==4.56.0
-torch==2.6.0+cu124
+torch==2.6.0
 huggingface-hub==0.34.4
 
 # Jupyter Environment
