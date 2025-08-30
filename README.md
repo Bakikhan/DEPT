@@ -54,7 +54,7 @@ The analysis identified five critical factors driving customer churn behavior. C
 The email generation component represents an advanced application of Large Language Model technology specifically engineered for telecommunications customer retention. The system utilizes the Llama 3.1-8B model with custom prompt engineering to generate personalized, brand-compliant emails that adapt to individual customer risk profiles and demographic segments.
 
 **Advanced Natural Language Processing**
-The implementation demonstrates sophisticated prompt engineering techniques that embed Vodafone brand guidelines directly into the model's generation process. System prompts include comprehensive tone requirements, mandatory structural elements, and content constraints ensuring consistency across all generated communications. User prompts dynamically incorporate customer-specific data including tenure, service details, churn probability, and identified risk factors.
+The implementation demonstrates sophisticated prompt engineering techniques utilizing the Hugging Face Llama 3.1-8B model running locally (no external API dependencies). The system embeds Vodafone brand guidelines directly into the model's generation process through carefully crafted system prompts that include comprehensive tone requirements, mandatory structural elements, and content constraints ensuring consistency across all generated communications. User prompts dynamically incorporate customer-specific data including tenure, service details, churn probability, and identified risk factors.
 
 **Brand Compliance and Quality Assurance**
 Automated compliance checking validates every generated email against Vodafone brand standards through multi-dimensional analysis. The system evaluates mandatory elements including personalization, professional tone, content structure, and required messaging components. Quality scoring mechanisms ensure minimum compliance thresholds are met, with fallback template systems activating when LLM-generated content fails validation standards.
@@ -93,7 +93,7 @@ datetime
 json
 ```
 
-Core data science dependencies include pandas for data manipulation, numpy for numerical computing, scikit-learn for machine learning algorithms, matplotlib and seaborn for data visualization. The AI components leverage transformers library for LLM integration, PyTorch for deep learning frameworks with CUDA 12.4 support, and huggingface-hub for model management.
+Core data science dependencies include pandas for data manipulation, numpy for numerical computing, scikit-learn for machine learning algorithms, matplotlib and seaborn for data visualization. The AI components leverage transformers library for local LLM integration with Hugging Face Llama 3.1-8B model, PyTorch for deep learning frameworks with CUDA 12.4 support, and huggingface-hub for model management without requiring external API access.
 
 ## Project Structure and Code Organization
 
@@ -128,13 +128,12 @@ cd dept-churn-prediction
 
 **2. Install Dependencies**
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn
-pip install transformers torch huggingface-hub
+pip install -r requirements.txt
 ```
 
 **3. Run Complete Analysis**
-```python
-python DEPT.py
+```bash
+jupyter notebook DEPT.ipynb
 ```
 
 **4. Generate Emails Only**
